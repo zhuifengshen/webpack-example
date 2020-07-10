@@ -1,6 +1,6 @@
 /**
  * webpack.config.js webpack默认的配置文件名
- * 
+ *
  * 所有构建工具都基于 nodejs 平台运行，所以模块化默认采用 commonjs
  */
 
@@ -19,7 +19,7 @@ module.exports = {
   },
   // loaders 配置
   module: {
-    //详细 loader 配置，不同文件必须配置不同的 loader 处理
+    // 详细 loader 配置，不同文件必须配置不同的 loader 处理
     rules: [
       {
         // 匹配哪些文件
@@ -29,8 +29,8 @@ module.exports = {
           // 创建 style 标签，将 js 中的样式资源插入到 head 中生效，需要下载 style-loader
           'style-loader',
           // 将 css 文件 编程 commonjs 模块加载到 js 中，需要下载 css-loader
-          'css-loader'
-        ]
+          'css-loader',
+        ],
       },
       {
         test: /\.less$/,
@@ -38,14 +38,14 @@ module.exports = {
           'style-loader',
           'css-loader',
           // 将 less 文件编译成 css 文件，需要下载 less less-loader
-          'less-loader'
-        ]
-      }
-    ]
+          'less-loader',
+        ],
+      },
+    ],
   },
   // plugins 的配置
   plugins: [],
   // 模式
-  mode: 'development',  // 开发模式
+  mode: 'development', // 开发模式
   // mode: 'production',  // 发布模式
 }

@@ -14,7 +14,7 @@ module.exports = {
         test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader, // 取代 style-loader，提取 js 中的 css 成单独文件
-          'css-loader',  // 将 css 文件整合到 js 文件中
+          'css-loader', // 将 css 文件整合到 js 文件中
         ],
       },
     ],
