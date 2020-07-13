@@ -1,5 +1,5 @@
 /**
- * 分割提取第三方类库
+ * 分割提取第三方类库，配置 optimization 优化参数
  */
 const { resolve } = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')

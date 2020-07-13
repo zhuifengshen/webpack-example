@@ -1,5 +1,5 @@
 /**
- * import 动态导入语法：将某个文件单独打包
+ * 正常加载：可以认为是并行加载（同一时间加载多个文件)
  */
 const { resolve } = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')

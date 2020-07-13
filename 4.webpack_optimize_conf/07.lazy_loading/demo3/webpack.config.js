@@ -1,5 +1,5 @@
 /**
- * import 动态导入语法：将某个文件单独打包
+ * 预加载（prefetch）：等其他资源加载完毕，浏览器空闲了，再偷偷加载资源（目前兼容性不好，特别是在移动端，慎用）
  */
 const { resolve } = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')

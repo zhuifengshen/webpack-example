@@ -5,7 +5,7 @@ function sum(...args) {
 // eslint-disable-next-line
 console.log(sum(1, 2, 3, 4))
 
-// 通过 import 动态导入语法，让某个文件被单独打包成一个 chunk
+// 通过 import 动态导入语法，让某个文件被单独打包成一个 chunk（懒加载原理）
 import(/* webpackChunkName: 'test' */ './test')
   .then(({ mul }) => {
     // 文件加载成功

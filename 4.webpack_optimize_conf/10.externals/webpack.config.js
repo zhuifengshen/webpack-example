@@ -1,5 +1,5 @@
 /**
- * externals: 指定哪些类库使用外部资源，打包时不涵盖进来
+ * externals: 指定哪些类库使用外部CDN资源，打包时不涵盖进来，不过需要在入口HTML文件引入
  */
 const { resolve } = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
