@@ -9,6 +9,7 @@ module.exports = {
   entry: {
     // ['jquery'] --> 要打包的库的列表
     jquery: ['jquery'],
+    // react: ['react', 'react-dom', 'react-router-dom'],
   },
   output: {
     filename: '[name].js',
